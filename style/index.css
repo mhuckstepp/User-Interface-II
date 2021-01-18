@@ -335,8 +335,8 @@ footer button a {
   transition: 1s;
 }
 
-footer nav a {
-  margin: 5px;
+footer nav {
+  margin-bottom: 10px;
 }
 
 /* about page specific styling */
@@ -394,11 +394,9 @@ footer nav a {
 
 @media only screen and (max-width: 800px) {
   html * {
-    border: 1px solid black;
   }
 
   body {
-    background-color: lightblue;
   }
   header {
     justify-content: space-evenly;
@@ -407,23 +405,22 @@ footer nav a {
   }
 
   h1 {
+    width: 100%;
     font-size: 4rem;
-    margin: auto;
     letter-spacing: 3px;
-    border: 1px solid red;
+    text-align: center;
   }
 
   header nav {
     align-self: center;
     flex-direction: column;
     text-align: center;
-    max-width: 600px;
-    border: 1px solid red;
   }
 
   header button {
     height: 100%;
-    width: 50%;
+    width: 60%;
+    align-self: center;
     border-radius: 4px;
     transition: 0.5s;
   }
@@ -434,12 +431,49 @@ footer nav a {
     color: black;
     display: block;
     overflow: hidden;
-    padding: 11px 20px;
+  }
+
+  .mainH {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+  .mainP {
+    width: 65%;
+    margin: 1%;
+  }
+
+  .mainIm {
+    width: 100%;
+    max-width: 500px;
+    min-width: 250px;
+    height: auto;
+  }
+
+  .mainText {
+    display: flex;
+    width: 65%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .mainText h2 {
+    font-size: 3.5rem;
+    margin-top: 2%;
   }
 }
 
 @media only screen and (max-width: 500px) {
   body {
-    background-color: blue;
+  }
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-self: center;
+    align-content: center;
   }
 }
